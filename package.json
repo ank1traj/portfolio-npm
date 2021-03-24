@@ -1,0 +1,23 @@
+{
+  "name": "ankit",
+  "version": "1.0.0",
+  "description": "A personal card for Ankit Raj (@ank1traj)",
+  "main": "card.js",
+  "scripts": {
+    "test": "node card.js"
+  },
+  "keywords": [
+    "card"
+  ],
+  "author": "Ankit Raj",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^5.0.0",
+    "clear": "^0.1.0",
+    "cli-spinner": "^0.2.10",
+    "inquirer": "^8.0.0",
+    "open": "^8.0.4",
+    "ora": "^5.4.0",
+    "request": "^2.88.2"
+  }
+}

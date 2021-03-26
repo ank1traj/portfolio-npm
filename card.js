@@ -65,7 +65,7 @@ const data = {
 	github: chalk.gray("https://github.com/") + chalk.green("ank1traj"),
 	linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("ank1traj"),
 	Instagram: chalk.white("https://instagram.com/") + chalk.keyword('pink')("ank1tshrivastava"),
-	npx: chalk.red("npx") + " " + chalk.white("ankit"),
+	npx: chalk.red("npx") + " " + chalk.white("ank1t"),
 
     labelWork: chalk.white.bold("Work:"),
     labelHackerRank: chalk.white.bold("HackerRank:"),

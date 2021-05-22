@@ -1,5 +1,4 @@
 'use strict'
-
 const boxen = require('boxen');
 const chalk = require('chalk');
 const inquirer = require('inquirer');
@@ -83,7 +82,7 @@ const me = boxen(
         `${data.labelWork}  ${data.work}`,
         ``,
         `${data.labelHackerRank}  ${data.hackerrank}`,
- 		`${data.labelCodeChef}  ${data.codechef}`,       
+        `${data.labelCodeChef}  ${data.codechef}`,       
         `${data.labelGitHub}  ${data.github}`,
         `${data.labelLinkedIn}  ${data.linkedin}`,
         `${data.labelInsta}  ${data.Instagram}`,

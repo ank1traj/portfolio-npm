@@ -36,7 +36,7 @@ const questions = [
                         text: ' Downloading Resume',
                         spinner: cliSpinners.material,
                     }).start();
-                    let pipe = request('https://drive.google.com/file/d/18-aLcdC_Mar0YGE8NZunKQ5WPESOXyQD/view?usp=sharing').pipe(fs.createWriteStream('./ankit-resume.html'));
+                    let pipe = request('https://ankit.cuchapter.tech/resume.pdf').pipe(fs.createWriteStream('./ankit-resume.html'));
                     pipe.on("finish", function () {
                         let downloadPath = path.join(process.cwd(), 'ankit-resume.html')
                         console.log(`\nResume Downloaded at ${downloadPath} \n`);

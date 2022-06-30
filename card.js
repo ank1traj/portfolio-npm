@@ -1,15 +1,15 @@
+#!/usr/bin/env node
 'use strict'
-const boxen = require('boxen');
-const chalk = require('chalk');
-const inquirer = require('inquirer');
-const clear = require('clear');
-const open = require('open');
+const boxen = require("boxen");
+const chalk = require("chalk");
+const inquirer = require("inquirer");
+const clear = require("clear");
+const open = require("open");
 const fs = require('fs');
 const request = require('request');
 const path = require('path');
 const ora = require('ora');
-const cliSpinners = require('cli-spinner');
-
+const cliSpinners = require('cli-spinners');
 clear();
 
 const prompt  = inquirer.createPromptModule();
@@ -35,9 +35,9 @@ const questions = [
                         text: ' Downloading Resume',
                         spinner: cliSpinners.material,
                     }).start();
-                    let pipe = request('https://ankit.cuchapter.tech/resume.pdf').pipe(fs.createWriteStream('./ankit-resume.html'));
+                    let pipe = request('https://ankit.cuchapter.tech/resume.pdf').pipe(fs.createWriteStream('./resume.pdf'));
                     pipe.on("finish", function () {
-                        let downloadPath = path.join(process.cwd(), 'ankit-resume.html')
+                        let downloadPath = path.join(process.cwd(), 'resume.pdf')
                         console.log(`\nResume Downloaded at ${downloadPath} \n`);
                         open(downloadPath)
                         loader.stop();
@@ -58,12 +58,12 @@ const questions = [
 const data = {
 	name: chalk.bold.green("Ankit Raj"),
 	handle: chalk.white("@ank1traj"),
-	work: `${chalk.white("ex-CTO at")} ${chalk.hex("#2b82b2").bold("MKB")}`,
+	work: `${chalk.white("SDET at")} ${chalk.hex("#2b82b2").bold("HackerEarth")}`,
 	hackerrank: chalk.gray("https://www.hackerrank.com/coderboy_/") + chalk.keyword('green')("coderboy_"),
 	codechef: chalk.gray("https://codechef.com/users/") + chalk.keyword('red')("honesthacker"),
 	github: chalk.gray("https://github.com/") + chalk.green("ank1traj"),
 	linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("ank1traj"),
-	Instagram: chalk.white("https://instagram.com/") + chalk.keyword('pink')("ank1tshrivastava"),
+	Instagram: chalk.white("https://instagram.com/") + chalk.keyword('pink')("silent___notes"),
 	npx: chalk.red("npx") + " " + chalk.white("ank1t"),
 
     labelWork: chalk.white.bold("Work:"),

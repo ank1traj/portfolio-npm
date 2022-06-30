@@ -44,6 +44,13 @@ const questions = [
                     });
                 }
             },
+            {
+                name: `Schedule a ${chalk.redBright.bold("Meeting")}?`,
+                value: () => {
+                    open('https://booking.setmore.com/scheduleappointment/3648dafa-a45e-45f7-aeb9-b6862481b7b0');
+                    console.log("\n See you at the meeting \n");
+                }
+            },
 			{
 				name: "Just Quit.",
 				value: () => {
@@ -64,7 +71,7 @@ const data = {
 	github: chalk.gray("https://github.com/") + chalk.green("ank1traj"),
 	linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("ank1traj"),
 	Instagram: chalk.white("https://instagram.com/") + chalk.keyword('pink')("silent___notes"),
-	npx: chalk.red("npx") + " " + chalk.white("ank1t"),
+	npx: chalk.red("npx") + " " + chalk.white("coderboy"),
 
     labelWork: chalk.white.bold("Work:"),
     labelHackerRank: chalk.white.bold("HackerRank:"),
@@ -94,22 +101,18 @@ const me = boxen(
         )}`,
         ``,
         `${chalk.italic(
-            "Seeking internship in a fast-growing organization so as to hone my skills"
+            "A 22 Y/O Software🌈 and Web developer🎯 from India who loves to build, "
         )}`,
         `${chalk.italic(
-            "and attaining excellent standards while meeting organizational needs."
-        )}`,
-        ``,
-        `${chalk.italic(
-            "I am currently looking for new opportunities,"
-        )}`,
-        `${chalk.italic("my inbox is always open. Whether you have a")}`,
-        `${chalk.italic(
-            "question or just want to say hi, I will try "
+            "deploy & maintain things for the ☁️ and specializes in building"
         )}`,
         `${chalk.italic(
-            "my best to get back to you!"
-        )}`
+            "(and occasionally designing) exceptional digital experiences."
+        )}`,
+        `${chalk.italic(
+            " Meticulous and motivated graduate student indulged in competitive programming."
+        )}`,
+        
     ].join("\n"),
     {
         margin: 1,
